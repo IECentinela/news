@@ -1,0 +1,23 @@
+server:
+ port: 8083
+ servlet:
+    context-path: /centinela
+ 
+spring:
+ resources:
+  static-locations: classpath:/static/ 
+ datasource:
+  url: jdbc:mysql://localhost:3306/userscentinela
+  username: root
+  password: Media100
+  driver-class-name: com.mysql.cj.jdbc.Driver
+ jpa:
+  properties:
+   hibernate:
+    proc:
+     param_null_passing: true
+     
+news:
+ api:
+  url: http://eventregistry.org/api/v1/article/getArticles
+  urlUri: http://eventregistry.org/api/v1/minuteStreamArticles
