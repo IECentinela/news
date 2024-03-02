@@ -7,9 +7,9 @@ spring:
  resources:
   static-locations: classpath:/static/ 
  datasource:
-  url: jdbc:mysql://localhost:3306/userscentinela
-  username: root
-  password: Media100
+  url: jdbc:mysql://192.168.1.140:3306/userscentinela
+  username: usr_centinelaserv
+  password: .SrvG9v%t4ZYow
   driver-class-name: com.mysql.cj.jdbc.Driver
  jpa:
   properties:
