@@ -46,7 +46,7 @@ public class NewsController {
 
 	@GetMapping("/test")
 	public void test() {
-		String response=news.searchNewsApi("{\"query\":{\"$query\":{\"$or\":[{\"keyword\":\"Harfuch\",\"keywordLoc\":\"body\"},{\"keyword\":\"Harfuch\",\"keywordLoc\":\"title\"},{\"dateStart\":\"2023-10-01\",\"dateEnd\":\"2023-10-09\"}]},\"$filter\":{\"dataType\":[\"news\",\"pr\",\"blog\"],\"isDuplicate\":\"skipDuplicates\"}},\"resultType\":\"articles\",\"articlesSortBy\":\"socialScore\",\"includeArticleSocialScore\":true,\"includeArticleConcepts\":true,\"includeArticleCategories\":true,\"includeArticleLocation\":true,\"includeArticleImage\":true,\"includeArticleVideos\":true,\"includeArticleLinks\":true,\"includeArticleExtractedDates\":true,\"includeArticleDuplicateList\":true,\"includeArticleOriginalArticle\":true,\"includeConceptImage\":true,\"includeConceptDescription\":true,\"includeConceptSynonyms\":true,\"includeConceptTrendingScore\":true,\"includeSourceDescription\":true,\"includeSourceLocation\":true,\"includeSourceRanking\":true,\"apiKey\":\"98f827b5-dc32-4dcb-a768-1c6c291c80cd\"}");
-		dataBaseService.saveNews(response, "5182cbc0-cd88-477d-a450-14e87e87446b");
+		String response=news.searchNewsApi("");
+		dataBaseService.saveNews(response, "985b94b0-ba7b-4114-bbde-e9a36c84b7dd");
 	}
 }

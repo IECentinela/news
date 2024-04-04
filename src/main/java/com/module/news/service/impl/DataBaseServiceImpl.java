@@ -72,7 +72,7 @@ public class DataBaseServiceImpl implements DataBaseService {
 
     @Override
     public Boolean saveNews(String json, String resourceId) {
-        StoredProcedureQuery storedProcedureQuery = entityManager.createStoredProcedureQuery("centineladb.sp_processDataNews");
+        StoredProcedureQuery storedProcedureQuery = entityManager.createStoredProcedureQuery("centineladb.sp_processData7days");
         storedProcedureQuery.registerStoredProcedureParameter("in_jsonData", String.class, ParameterMode.IN);
         storedProcedureQuery.registerStoredProcedureParameter("in_resourceId", String.class, ParameterMode.IN);
         storedProcedureQuery.registerStoredProcedureParameter("response", String.class, ParameterMode.OUT);
